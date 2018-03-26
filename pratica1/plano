@@ -1,0 +1,46 @@
+ Plano pra prática
+
+(1) Usar o circuito com um voltímetro e um amperímetro. Mudar a tensão na
+    fonte. Tentar pegar pontos mais ou menos espaçados de 0,5 V, na faixa
+    de 0 a 10 V (20 pontos). Isso para cada resistor.
+    Análise: fitting de potência (mínimos quadrados) via QtiPlot. Comparar
+    resistência medida com nominal. Mostrar que o coef. linear é ~0 e que
+    a potência é 1.
+    Resultado esperado: gráfico linear (função afim homogênea), conforme
+    lei de Ohm.
+(2) (i) Usar o circuito com voltímetro, amperímetro e resistor (p/ não
+    estourar os componentes). 50 pontos, 0-10 V.
+    (ii) idem.
+    (iii) idem.
+    Análise não requerida aqui.
+    Resultados esperados: gráfico (i) começa crescendo mais rápido e passa
+    a crescer mais devagar conforme aumenta a voltagem (justificativa: au-
+    mentando a voltagem, aumenta a corrente, que aumenta a temperatura da
+    lâmpada, aumentando a resistência v/i). Gráficos de (ii) e (iii) come-
+    çam bem pequenos e crescem exponencialmente a partir de um ponto, de-
+    pois atingem um patamar (limite de corrente dado pelo resistor).
+(3) Primeira montagem: três resistores (47,100,100 omhs) em série. Resis-
+    tência equivalente esperada: 247 ohms.
+    Segunda montagem: três resistores (100,100,47) em paralelo. Resistên-
+    cia equivalente esperada: 24,2 ohms.
+    Terceira montagem: dois resistores de 100 ohms em paralelo, em série
+    com um de 47 ohms. Resistência equivalente esperada: 97 ohms.
+(4) Basta grafar V/i em função de V. É esperado que a resistência aumente
+    com a tensão, pois com maior tensão vem maior corrente, o que aumenta
+    a temperatura da lâmpada.
+(5) Para o diodo de (2), fitar a exponencial I = I0[exp(eV/kT)-1] via Qti-
+    Plot, obtendo e/k e I0.
+(6) Encontrar graficamente a tensão em que os LEDs passam a emitir luz.
+    De acordo com as frequências aproximadas das cores dos LEDs, obtidas
+    de tabelas, usar hf = eV para obter h.
+(7)
+(8) Aplicar tensão nos terminais do bastão de grafite (como?), medir a
+    corrente passando, dividir uma coisa pela outra para obter a resis-
+    tência. Medir o comprimento e o diâmetro do bastão. Usar a segunda
+    lei de Ohm (R = (rho) L / A) pra obter a resistividade.
+(9) Medir largura e comprimento dos retângulos. Pintar os retângulos com
+    grafite. Aplicar tensão nos retângulos e medir suas resistências. Com
+    a média das resistências, usar segunda lei de Ohm para calcular a al-
+    tura média das camadas de grafite (entra na área de seção).
+(10) Dividir o volume do bastão de grafite pela área de seção do parale-
+     lepípedo de grafite que fizemos no papel.

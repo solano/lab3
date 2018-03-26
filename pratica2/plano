@@ -1,0 +1,17 @@
+(5) A corrente que passa na malha é i = V_i/r_e, pois o resistor é ôhmico.
+    Logo, a potência útil (potência dissipada fora da fonte) é (V_i + V_c)*i
+    = (V_i^2 + V_i V_c)/r_e. Não precisamos medir a resistência do potenciô-
+    metro diretamente. Esta é R = V_c/i = V_c r_e/V_i.
+    Faremos variar R, anotando numa tabela os valores de V_i e V_c. Com isto
+    calcularemos a corrente i, a potência útil Pu, e a resistência do poten-
+    ciômetro R, e procuraremos o máximo de potência útil. Nesse ponto de má-
+    ximo, usaremos o teorema da máxima transferência de potência para obter
+    a resistência interna da fonte, r_i.
+
+(6) A potência total é (r_i + r_e + R)*i^2 = (r_i + r_e + R)*V_i^2/r_e^2.
+    A potência dissipada é r_i*i^2 = r_i*V_i^2/r_e^2.
+    A potência útil já foi calculada em (5).
+    A eficiência da transferência de potência é Pu/Pt =
+         (V_i + V_c)V_i/r_e * (r_i + r_e + R)*V_i^2/r_e^2 =
+         (V_i + V_c) (r_i + r_e + R) V_i^3 / r_e^3.
+    Tudo isso pode ser tabelado e então plotamos em função de R+r_e.

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fit>
+<fit version="1.0">
+<model>diodo</model>
+<type>2</type>
+<function>I0*(exp(k*x/T)-1)</function>
+<parameter>
+    <name>I0</name>
+    <explanation></explanation>
+    <value>1.0000000000000e+00</value>
+</parameter>
+<parameter>
+    <name>T</name>
+    <explanation></explanation>
+    <value>1.0000000000000e+00</value>
+</parameter>
+<parameter>
+    <name>k</name>
+    <explanation></explanation>
+    <value>1.0000000000000e+00</value>
+</parameter>
+</fit>

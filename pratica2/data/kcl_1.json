@@ -1,0 +1,24 @@
+{
+    "voltage":5,
+    "resistance":{
+        "nominal":{
+            "r_0":470,
+            "r_1":1000
+        },
+        "ohmeter":{
+            "r_0":470,
+            "r_1":1000
+        }
+    },
+    "current":{
+        "i_0":0.0112,
+        "i_1":0.0056,
+        "i_e":0.0998
+    },
+    "uncertainty":{
+        "voltage":1e-2,
+        "ohmeter":1e-2,
+        "ammeter":1e-3
+
+    }
+}

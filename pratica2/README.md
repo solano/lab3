@@ -10,7 +10,6 @@ Já está implantado no código as relações de kirchoff para obter as corrente
 As informações de cada circuito é guardada em arquivos .json na pasta data.<br>
 O resultado das análises vão para out/kcl_{}.out<br>
 Circuitos refeitos para melhor visualização de cada corrente e resistência.<br>
-Incluído também o cálculo das correntes usando o valor das resistências medido no ohmimetro.
-Incluído relação de equivalencia.
-Código pronto
+Incluído também o cálculo das correntes usando o valor das resistências medido no ohmimetro.<br>
+Incluído relação de equivalencia.<br>
 *Os arquivos .json estão com valores de exemplo onde colocaremos os nossos.*

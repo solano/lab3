@@ -1,4 +1,4 @@
-import numpy as n
+import numpy as np
 from LabIFSC import M
 
 # OBJETIVO:
@@ -26,19 +26,18 @@ Vb = [M((i[2], i[-1])) for i in data]
 Vc = [M((i[3], i[-1])) for i in data]
 Vd = [M((i[4], i[-1])) for i in data] if len(data[0]) > 5 else 0
 Ve = [M((i[5], i[-1])) for i in data] if len(data[0]) > 5 else 0
+Vfonte2 = [M((i[6], i[-1])) for i in data] if len(data[0]) > 5 else 0
 
 data
 if (N==1):
-    print("Para o primeiro circuito temos que:            ")
-    print("V_fonte - V_A - V_B - V_C = 0\n------")
+    print("V_fonte - V_A - V_B - V_C = 0")
     for i in range(data.shape[0]):
         u_soma = Vfonte[i]
         u_queda = Va[i]+Vb[i]+Vc[i]
         zero = M((0,data[i][-1]))
         print("{} = {} : {}".format(u_soma-u_queda, zero, u_soma-u_queda==zero ))
 else:
-    print("Para o segundo circuito temos que:            ")
-    print("V_fonte - V_A - V_C - V_E = 0\n------")
+    print("MALHA 1: V_fonte - V_A - V_C - V_E = 0")
     for i in range(data.shape[0]):
         u_soma = Vfonte[i]
         u_queda = Va[i]+Vc[i]+Ve[i]
@@ -46,10 +45,9 @@ else:
         print("{} = {} : {}".format(u_soma-u_queda, zero, u_soma-u_queda==zero ))
 
 
-    print("\nE também:")
-    print("V_C - V_B - V_D = 0\n------")
+    print("\nMALHA 2: V_C - V_B + V_fonte2 - V_D = 0")
     for i in range(data.shape[0]):
-        u_soma = Vc[i]
+        u_soma = Vc[i]+Vfonte2[i]
         u_queda = Vb[i]+Vd[i]
         zero = M((0,data[i][-1]))
         print("{} = {} : {}".format(u_soma-u_queda, zero, u_soma-u_queda==zero ))

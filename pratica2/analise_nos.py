@@ -21,11 +21,22 @@ data_np = np.loadtxt(file)
 data.append(data_np)
 data = np.asarray(data) if len(data_np.shape)==1 else data_np
 
-Ie = [M((i[0], i[-1])) for i in data]
-I0 = [M((i[1], i[-1])) for i in data]
-I1 = [M((i[2], i[-1])) for i in data]
-I2 = [M((i[3], i[-1])) for i in data] if len(data[0]) > 4 else 0
-I3 = [M((i[4], i[-1])) for i in data] if len(data[0]) > 4 else 0
+def I_erro(x):
+    return 0.01*x if x<=20e-3 else 0.012*x
+
+
+Ie = [M((i[0], I_erro(i[0]))) for i in data]
+I0 = [M((i[1], I_erro(i[1]))) for i in data]
+I1 = [M((i[2], I_erro(i[2]))) for i in data]
+I2 = [M((i[3], I_erro(i[3]))) for i in data] if len(data[0]) > 4 else 0
+I3 = [M((i[4], I_erro(i[4]))) for i in data] if len(data[0]) > 4 else 0
+
+
+
+
+for i in range(3):          # quantidade de dados
+        print("${:latex}$ & ${:latex}$ & ${:latex}$ & Sim \\\\".format(I2[i]*1e3, I0[i]*1e3, I1[i]*1e3))
+
 
 if (N==1):
     print("Para o primeiro circuito temos que:            ")

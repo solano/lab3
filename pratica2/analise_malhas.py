@@ -21,14 +21,18 @@ data.append(data_np)
 data = np.asarray(data) if len(data_np.shape)==1 else data_np
 
 Vfonte = [M((i[0], i[-1])) for i in data]
-Va = [M((i[1], i[-1])) for i in data]
-Vb = [M((i[2], i[-1])) for i in data]
-Vc = [M((i[3], i[-1])) for i in data]
-Vd = [M((i[4], i[-1])) for i in data] if len(data[0]) > 5 else 0
-Ve = [M((i[5], i[-1])) for i in data] if len(data[0]) > 5 else 0
+Va = [M((i[1], i[1]*0.05)) for i in data]
+Vb = [M((i[2], i[2]*0.05)) for i in data]
+Vc = [M((i[3], i[3]*0.05)) for i in data]
+Vd = [M((i[4], i[4]*0.05)) for i in data] if len(data[0]) > 5 else 0
+Ve = [M((i[5], i[5]*0.05)) for i in data] if len(data[0]) > 5 else 0
 Vfonte2 = [M((i[6], i[-1])) for i in data] if len(data[0]) > 5 else 0
 
-data
+
+for i in range(4):          # quantidade de dados
+        print("${:latex}$ & ${:latex}$ & ${:latex}$ & ${:latex}$ & Sim \\\\".format(Vc[i], Vb[i], Vfonte2[i], Vd[i]))
+
+
 if (N==1):
     print("V_fonte - V_A - V_B - V_C = 0")
     for i in range(data.shape[0]):

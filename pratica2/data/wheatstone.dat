@@ -1,11 +1,20 @@
+# Esperado (teoria):
 # Tensão: 5v
 # faixa de corrente: 7,07 mA até 14,03 mA
 
-# Tensão voltimetro: 5.01v
-# r1 671 ohm
-# r2 666 ohm
-# r3 470 ohm
+# Obtido (experimento):
 
+# Tensão voltimetro: 5.01v
+# r1 671 +- 5 ohm
+# r2 666 +- 5 ohm
+# r3 470 +- 4 ohm
+
+# acurácia do ohmímetro (escala de 2 kohm): +- (3 ohm + 0.8%)
+# acurácia do voltímetro (escala de 20 V): +- (30 mV + 0.5%)
+# acurácia do voltímetro (escala de 2 V): +- (3 mV + 0.5%)
+# acurácia do amperímetro (escala de 20 mA): +- (0.1 mA + 0.8%)
+
+# Vp       i
 .962    6.86e-3
 #.981    6.82e-3
 #.935    6.91e-3

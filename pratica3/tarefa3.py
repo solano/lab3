@@ -30,7 +30,6 @@ plt.title(r"R variável, $C=100\mu F$, $R_i=10M\Omega$")
 # Eixo vertical
 plt.ylim([0,v_max+1])
 plt.yticks([0,v_max], ["0", r"$v_0$"])
-plt.plot([0,t_max], [v_max, v_max], 'k--')
 plt.ylabel("ddp do capacitor (v)")
 # Eixo horizontal
 plt.xlim([0,t_max])

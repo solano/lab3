@@ -20,7 +20,7 @@ plt.figure(dpi=100)
 plt.title(r"Curva de carga de capacitores, $R_i=10M\Omega$")
 # Eixo vertical
 plt.ylim([0,v_max+1])
-plt.yticks([0,v_max], ["0", r"$v_0$"])
+plt.yticks([0,v_max])
 plt.plot([0,t_max], [v_max, v_max], 'k--')
 plt.ylabel("ddp do capacitor (v)")
 # Eixo horizontal
@@ -40,7 +40,8 @@ plt.legend(loc=0)
 plt.savefig("pratica3/graph/(1)curva_capacitores.png")
 # Regressão linear para encontrar a capacitância ---------------------
 plt.figure(dpi=100)
-plt.title(r"$\ln(v_0-v(t))=\ln(v_0)-t/RC$")
+plt.title("Linearização da curva de carga")
+
 # Eixo vertical
 plt.ylabel(r"$v_0-v(t)$")
 # Eixo horizontal

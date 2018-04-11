@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-Capacitor = [100e-6,10e-6,220e-6]
+Capacitor = [100e-6,220e-6,1000e-6]
 
 
 # Componentes que serão usados no experimento -------------------
@@ -16,7 +16,7 @@ C2 = Capacitor[0]+Capacitor[1] #
 C3 = Capacitor[0]*(Capacitor[1]+Capacitor[2])/(Capacitor[0]+Capacitor[1]+Capacitor[2])  #
 # --------------------------------------------------------------- v_max
 v_max = 5   # Tensão máxima no capacitor (Calculada no ohmimetro)
-t_max = 30 # Tempo máximo que serão pegos os dados.
+t_max = 40 # Tempo máximo que serão pegos os dados.
 t = np.linspace(0,t_max,100)
 v = lambda t,C : v_max*(1-np.exp(-t/(R*C)))    # Função tensão por tempo
 # Plot das curvas esperadas -------------------------------------

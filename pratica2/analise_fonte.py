@@ -34,6 +34,8 @@ ajuste = optimize.curve_fit(pot_util,R,Pu,[47,1.5])
 
 r_i = M(ajuste[0][0],np.sqrt(ajuste[1][0,0]))
 fem = M(ajuste[0][1],np.sqrt(ajuste[1][1,1]))
+print('Resultados do ajuste: r_i = {}, fem = {}'.format(r_i,fem))
+
 Rx = np.linspace(0,max(R),1001)
 i_aj = fem.nominal/(r_e.nominal+r_i.nominal+Rx)
 Pu_aj = (r_e.nominal+Rx)*i_aj*i_aj
@@ -41,14 +43,33 @@ Pt_aj = fem.nominal*i_aj
 Pd_aj = Pt_aj-Pu_aj
 eta_aj = Pu_aj/Pt_aj
 
-# PLOTAR TUDO EM FUNÇÃO DE x = R + r_e
+######## PLOTAR TUDO EM FUNÇÃO DE x = R + r_e ########
+
+######## SÓ A POTÊNCIA ÚTIL, AJUSTE ########
+#plt.figure(dpi=500)
+plt.figure(dpi=80)
+plt.plot(xx,Pu_aj,zorder=1)
+plt.errorbar(x,Pu,erro_Pu,erro_R+r_e.incerteza,fmt='.k',elinewidth=0.5)
+#plt.plot(x,Pu,'.k')
+plt.xlim([0,100])
+plt.ylim([0.006,0.015])
+#plt.xlim([0,850])
+plt.xlabel('Resistência total $r_e + R$ ($\Omega$)')
+plt.ylabel('Potência útil (W)')
+plt.title('Análise da fonte não-ideal (ajuste ampliado)')
+#plt.savefig('pratica2/graficos/fonte-ajuste.png',bbox_inches='tight')
+#plt.savefig('pratica2/graficos/fonte-ajuste-close.png',bbox_inches='tight')
+plt.show()
+
+######## TODAS AS POTÊNCIAS, AJUSTE ########
 x = R + r_e.nominal
 xx = Rx + r_e.nominal
-fig=plt.figure(dpi=100)
-plt.plot(xx,Pu_aj,color='royalblue',label='Potência útil')
-plt.plot(x,Pu,'.r',color='royalblue')
-plt.plot(xx,Pd_aj,color='orange',label='Potência dissipada')
-plt.plot(xx,Pt_aj,color='tomato',label='Potência total')
+#fig=plt.figure(dpi=500)
+fig = plt.figure(dpi=80)
+plt.plot(xx,Pu_aj,color='royalblue',label='Potência útil',zorder=0)
+plt.plot(x,Pu,'.r',color='royalblue',zorder=1)
+plt.plot(xx,Pd_aj,color='orange',label='Potência dissipada',zorder=0)
+plt.plot(xx,Pt_aj,color='tomato',label='Potência total',zorder=0)
 plt.plot(x,x*0-10,'--k',label='Eficiência') #só pra aparecer na legenda
 plt.ylim([0,0.04])
 plt.xlim([0,820])
@@ -61,17 +82,4 @@ plt.plot(xx,eta_aj,'--k')
 plt.ylabel('Eficiência')
 plt.ylim([0,1])
 plt.title('Análise da fonte não-ideal')
-plt.show()
-
-# PLOTAR SÓ A POTÊNCIA ÚTIL
-plt.figure(dpi=100)
-plt.plot(xx,Pu_aj,zorder=1)
-#plt.errorbar(x,Pu,erro_Pu,erro_R+r_e.incerteza,fmt='.k',elinewidth=0.5)
-plt.plot(x,Pu,'.k')
-#plt.xticks([r_i]+list(range(0,301,30)),['$r_i$']+list(range(0,301,30)))
-plt.xlim([0,100])
-plt.ylim([0.007,0.013])
-plt.xlabel('Resistência total $r_e + R$ ($\Omega$)')
-plt.ylabel('Potência útil (W)')
-plt.title('Análise da fonte não-ideal')
-plt.show()
+#plt.savefig('pratica2/graficos/fonte-ajuste-potencias.png',bbox_inches='tight')

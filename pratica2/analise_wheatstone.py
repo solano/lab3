@@ -50,8 +50,8 @@ func2 = lambda r: func(r,l_ajuste.nominal,R3_ajuste.nominal,Vf_ajuste.nominal)
 
 Rx_eq_aj = l_ajuste*R3_ajuste/(1-l_ajuste)
 # estimativa do erro que vem de Rx
-Rx_eq_aj.incerteza = max(Rx_eq_aj.incerteza,
-      erro_Rx[(erro_Rx-Rx_eq_aj.nominal).argmin()])
+#Rx_eq_aj.incerteza = max(Rx_eq_aj.incerteza,
+#      erro_Rx[(erro_Rx-Rx_eq_aj.nominal).argmin()])
 print('Resistência Rx de equilíbrio prevista:', Rx_eq_prev)
 print('Resistência obtida no ajuste:',Rx_eq_aj)
 print('EQUIVALENTES' if Rx_eq_aj==Rx_eq_prev else 'NÃO EQUIVALENTES')

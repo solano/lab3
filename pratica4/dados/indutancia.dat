@@ -1,0 +1,15 @@
+# tarefa 7: indutância mútua (solenoides coaxiais)
+
+# f= frequência do sinal
+# eps0 = pico de tensão no solenoide interno
+# V0 = pico de tensão no resistor ligado ao solenoide externo
+# resistência do resistor é de 98.6 ohms (na escala de 200 ohm)
+
+# f (Hz)    eps0 (V)    V0  (V) 
+70.932       0.145        14.5
+154.7        0.25        11.5  
+620.2        1.225       14.0
+698.3        1.375       14.0
+777.5        1.5         13.75
+779.4        1.5         13.75
+883.1        1.7         13.5

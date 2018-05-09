@@ -1,8 +1,40 @@
 # Campo magnético no eixo central de uma bobina circular
-# a = ?
+# a = 14 +- 0.2 cm
+# N = 130 espiras
 # I = ?
+# Vh de fundo = -.002 V
 
 # z é posição ao longo do eixo central, com 0 na bobina
-# B é campo magnético
+# Vh é tensão Hall
 
-# z (m)   B (T)
+# z (m)   Vh (V)
+.00     .150
+.01     .149
+.02     .146
+.03     .141
+.04     .134
+.05     .128
+.06     .120
+.07     .111
+.08     .103
+.09     .094
+.10     .084
+.11     .077
+.12     .070
+.13     .063
+.14     .057
+
+-.01    .148
+-.02    .144
+-.03    .139
+-.04    .133
+-.05    .125
+-.06    .116
+-.07    .107
+-.08    .099
+-.09    .090
+-.10    .082
+-.11    .074
+-.12    .067
+-.13    .061
+-.14    .056

@@ -1,10 +1,45 @@
 # Campo magnético no eixo central de um par de bobinas em configuração
 # anti-Helmholtz
 
-# a = ?
-# I = ?
+# a = 14 cm
+# b =~ a
+# z0 =~ 0
+# I = 1.02 A
+# Vh de fundo = -.001
 
 # z = posição ao longo do eixo, com 0 no centro entre as duas bobinas
-# B = campo magnético
+# Vh = tensão Hall
 
-# z (m)    B (T)
+# z (m)    Vh (V)
+.00     -.007
+.01     .011
+.02     .028
+.03     .045
+.04     .060
+.05     .073
+.06     .083
+.07     .092
+.08     .099
+.09     .103
+.10     .103
+.11     .102
+.12     .099
+.13     .095
+.14     .090
+.15     .083
+
+-.01    -.024
+-.02    -.043
+-.03    -.057
+-.04    -.069
+-.05    -.081
+-.06    -.092
+-.07    -.100
+-.08    -.104
+-.09    -.106
+-.10    -.106
+-.11    -.104
+-.12    -.100
+-.13    -.095
+-.14    -.090
+-.15    -.084

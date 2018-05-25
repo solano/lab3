@@ -1,13 +1,15 @@
 # Circuito RL
-# Resistor de _________ ohms
-# Indutor de ________ henries
+# Resistor de 47.8 ohms
+# Indutor de 46.1 milihenries
+# Resistencia interna indutor: XD
 
 # Mediremos tensão no circuito, corrente no circuito e fase relativa entre
 # as duas coisas pra um número grande de frequências, usando o osciloscópio.
 
 # A primeira coluna dá a frequência em Hz como lida no gerador de funções.
 
-# Segunda e terceira colunas são escala e valor da tensão TOTAL sobre o cir-# cuito (valor da tensão = (2)*(3), esse (3) é o número de 'quadradinhos'
+# Segunda e terceira colunas são escala e valor da tensão TOTAL sobre o cir-
+# cuito (valor da tensão = (2)*(3), esse (3) é o número de 'quadradinhos'
 # contados no osciloscópio. A contagem vai do vale à crista, então é
 # O DOBRO DA AMPLITUDE.
 
@@ -15,7 +17,17 @@
 
 # Sexta e sétima colunas são a mesma coisa para a fase (em segundos), que
 # vai ser contada positiva com a corrente atrasada em relação à tensão.
+# ESSA NÃO É O DOBRO, É O VALOR REAL.
 
-# f       Vt         Vr        dt
-50       1   3.8   .5   2.3   .001  4
-100      1   4     .5   2     .001  3
+# f         Vt          Vr          dt
+22.4       2  6        2  4.6     5e-3 4.6       
+50.2       2  6.2      2  4.6     2e-3 5.4
+65.97      2  4.5      2  3.3     2e-3 3.6
+83.47      2  4.5      2. 3.2     2e-3 2.6
+102.6      2  6.4      2  4.5     1e-3 5.5
+132.8      2  6.6      2  4.4     1e-3 3.0
+157.1      2  6.8      2  4.3    .5e-3 7.6 
+170.2      2  5.0      1  6.0    .5e-3 5.0
+185.8      2  5.1      1  6.0    .5e-3 4.3
+200.0      2  5.1      1  5.9    .5e-3 3.8
+

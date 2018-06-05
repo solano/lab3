@@ -1,7 +1,7 @@
 # Circuito RL
 # Resistor de 47.8 ohms
 # Indutor de 46.1 milihenries
-# Resistencia interna indutor: XD
+# Resistencia interna indutor: 14.6 ohms (multímetro)
 
 # Mediremos tensão no circuito, corrente no circuito e fase relativa entre
 # as duas coisas pra um número grande de frequências, usando o osciloscópio.
@@ -20,14 +20,13 @@
 # ESSA NÃO É O DOBRO, É O VALOR REAL.
 
 # f         Vt          Vr          dt
-22.4       2  6        2  4.6     5e-3 4.6       
+22.4       2  6        2  4.6     5e-3 4.6
 50.2       2  6.2      2  4.6     2e-3 5.4
 65.97      2  4.5      2  3.3     2e-3 3.6
 83.47      2  4.5      2. 3.2     2e-3 2.6
 102.6      2  6.4      2  4.5     1e-3 5.5
 132.8      2  6.6      2  4.4     1e-3 3.0
-157.1      2  6.8      2  4.3    .5e-3 7.6 
+157.1      2  6.8      2  4.3    .5e-3 7.6
 170.2      2  5.0      1  6.0    .5e-3 5.0
 185.8      2  5.1      1  6.0    .5e-3 4.3
 200.0      2  5.1      1  5.9    .5e-3 3.8
-

@@ -1,6 +1,6 @@
 # Circuito RC
 # Resistor de 47.8 ohms
-# Capacitor de 0.222 microfaradays
+# Capacitor de 0.222 microfarads
 
 # Mediremos tensão no circuito, corrente no circuito e fase relativa entre
 # as duas coisas pra um número grande de frequências, usando o osciloscópio.
@@ -21,7 +21,7 @@
 # f         Vt          Vr          dt
 1010.6      5  4.4      .5  2.8     .1e-3 2.5
 3233        5  4.1      1   4.1     50e-6 1.7
-4976        5  3.8      1   5.8     20e-6 2.9 
+4976        5  3.8      1   5.8     20e-6 2.9
 7113        5  3.4      2   3.6     20e-6 2.2
 10150       5  3.1      2   4.2     10e-6 3.3
 13.75e3     5  2.8      2   4.6     10e-6 2.6
@@ -29,5 +29,5 @@
 16.94e3     5  2.6      2   4.8     10e-6 2.2
 19.94e3     5  2.4      2   4.8     5e-6  3.9
 30.84e3     5  2.3      5   2.0     5e-6  2.7
-39.63e3     5  2.2      5   2.0     5e-6  2.8
-50.50e3     2  5.4      2   5.2     2e-6  5.0
+# 39.63e3     5  2.2      5   2.0     5e-6  2.8
+# 50.50e3     2  5.4      2   5.2     2e-6  5.0

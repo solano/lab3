@@ -30,7 +30,7 @@ _L = 46.1e-3
 
 R = unc.ufloat(_R,err_o200(_R)) # escala de 200 ohms
 r = unc.ufloat(_r,err_o200(_r)) # escala de 200 ohms
-L = unc.ufloat(_L,5e-3) # falta a função de erro do indutímetro
+L = unc.ufloat(_L,err_i200m(_L)) # falta a função de erro do indutímetro
 
 print("R = {}, r = {}, L = {}\n".format(R,r,L))
 

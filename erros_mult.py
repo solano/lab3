@@ -40,11 +40,11 @@ err_c20u  = lambda x: 200e-9 + 2.5e-2*abs(x)
 err_c200u = lambda x: 2e-6   + 5.0e-2*abs(x)
 
 # indutímetro (frequência de teste = 100 Hz)
-err_2m    = lambda x: 30e-6  + 2.5e-2*abs(x)
-err_20m   = lambda x: 300e-6 + 2.5e-2*abs(x)
-err_200m  = lambda x: 3e-3   + 2.5e-2*abs(x)
-err_2     = lambda x: 30e-3  + 2.5e-2*abs(x)
-err_20    = lambda x: 300e-3 + 2.5e-2*abs(x)
+err_i2m    = lambda x: 30e-6  + 2.5e-2*abs(x)
+err_i20m   = lambda x: 300e-6 + 2.5e-2*abs(x)
+err_i200m  = lambda x: 3e-3   + 2.5e-2*abs(x)
+err_i2     = lambda x: 30e-3  + 2.5e-2*abs(x)
+err_i20    = lambda x: 300e-3 + 2.5e-2*abs(x)
 
 def erro_array(arr, ferr):
     erros = []

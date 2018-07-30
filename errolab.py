@@ -1,5 +1,6 @@
 # feito pra funcionar com o pacote uncertainties
 
+a = 3
 import uncertainties as unc
 from uncertainties import unumpy as unp
 import numpy as np
